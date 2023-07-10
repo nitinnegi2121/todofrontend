@@ -12,7 +12,7 @@ const Todo = () => {
   }, [submitClicked]);
 
   const fetchData = async () => {
-    const url = "/todos";
+    const url = "https://todo-backend-2jpn.onrender.com/todos";
     try {
       const response = await fetch(url);
       const json = await response.json();
@@ -33,7 +33,7 @@ const Todo = () => {
     // let mainUrl = "http://localhost:5000";
 
     try {
-      const res = await fetch(`/todos`, {
+      const res = await fetch(`https://todo-backend-2jpn.onrender.com/todos`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
